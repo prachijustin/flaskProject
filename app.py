@@ -22,6 +22,11 @@ def login():
             return 'Invalid credentials!'
 
 
+@app.route('/nagarro')
+def nagarro_intro():
+    return render_template('nagarro.html')
+
+
 if __name__ == '__main__':
     app.run(use_reloader = True, debug = True)
 
